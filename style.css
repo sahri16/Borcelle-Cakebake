@@ -11,6 +11,8 @@
   background-color: #2e1700;
   padding-left: 60px;
   font-weight: bold;
+  position: relative;
+  z-index: 1050;
 }
 #logo {
   color: white;
@@ -22,7 +24,13 @@
 .navbar-nav {
   margin-left: 20px;
 }
-
+.dropdown-menu{
+  background-color: #573818 !important;
+  border: 2px solid white !important;
+}
+.dropdown-menu .dropdown-item{
+  color: white;
+}
 .nav-link {
   color: white !important;
   font-weight: bold;
@@ -155,6 +163,7 @@
 }
 #box .card:hover {
   transform: translateY(-15px);
+
 }
 
 /* banner */
@@ -238,6 +247,12 @@
   border-radius: 10px;
   cursor: pointer;
   /* width: 20%; */
+}
+#product-card .card:hover {
+  transform: translatey(10px);
+  /* transition: 0.10s ease; */
+
+  
 }
 .overlay {
   display: block;
