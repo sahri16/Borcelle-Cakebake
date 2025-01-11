@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.all-content {
+  background-color: #2e1700;
+}
+/* navbar */
+.navbar {
+  background-color: #2e1700;
+  padding-left: 60px;
+  font-weight: bold;
+}
+#logo {
+  color: white;
+  font-size: 23px;
+}
+#logo img {
+  margin-bottom: 10px;
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 10px;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  background-color: rgb(161, 109, 14, 1);
+  color: white;
+  border-radius: 5px;
+}
+.icons {
+  margin-left: 30px;
+}
+.icons img {
+  margin-left: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.icons img:hover {
+  transform: translateY(-5px);
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  height: 88.5vh;
+  display: flex;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(./images/background2.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+.home .img {
+  flex: 1 1 400px;
+}
+.home .img img {
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 400px;
+  margin-left: 60px;
+}
+.home .content h3 {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.home .content h2 {
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.changeContent::after {
+  content: " ";
+  color: rgba(161, 109, 14, 1);
+  animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+  0% {
+    content: "Birthday Cake";
+  }
+  20% {
+    content: "Party Cake";
+  }
+  50% {
+    content: "Slice Cake";
+  }
+  60% {
+    content: "Cup Cake";
+  }
+  100% {
+    content: "chocolate Cake";
+  }
+}
+.content p {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.home .content .btn {
+  width: 110px;
+  height: 38px;
+  color: white;
+  background-color: #573818;
+}
+
+/* responsive  */
+@media screen and (max-width: 800px) {
+  .content h3 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .home {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 560px) {
+  .home {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 330px) {
+  .content h3 {
+    font-size: 50px;
+  }
+  .content h2 {
+    font-size: 50px;
+  }
+}
+
+/* top cards */
+
+#box {
+  margin-top: 50px;
+}
+#box .card {
+  box-shadow: 0px 0px 15px black;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#box .card:hover {
+  transform: translateY(-15px);
+}
+
+/* banner */
+.banner {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/banner2.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px black;
+  margin-top: 50px;
+}
+.banner .img {
+  flex: 1 1 400px;
+}
+.banner .img img {
+  width: 100%;
+}
+.banner .content {
+  flex: 1 1 400px;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+.banner .content h3 {
+  color: rgba(161, 109, 14, 1);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.content h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(161, 109, 14, 1);
+  text-shadow: 1px 1px 1px black;
+}
+.bannar .content p {
+  color: rgba(161, 109, 14, 1);
+}
+#btnOrder button {
+  letter-spacing: 3px;
+  width: 150px;
+  height: 35px;
+  color: white;
+  background-color: rgba(161, 109, 14, 1);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+/* responsive  */
+@media screen and (max-width: 855px) {
+  .banner {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bannar .content h3 {
+    font-size: 50px;
+  }
+}
+
+/* Product card */
+#product-card h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(161, 109, 14, 1);
+  font-weight: bold;
+  margin-top: 50px;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+
+#product-card .row {
+  margin-top: 50px;
+}
+#product-card .card {
+  background-color: rgba(161, 109, 14, 1);
+  box-shadow: 0 0 3px black;
+  border-radius: 10px;
+  cursor: pointer;
+  /* width: 20%; */
+}
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 70px;
+  margin: 5px;
+}
+#product-card .card:hover .overlay {
+  opacity: 1;
+  margin-left: 5px;
+  transition: 0.5s ease;
+}
+.overlay i img {
+  background-color: #2e1700;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding: 7px;
+  /* margin: -20px; */
+  margin-bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.overlay .btn-secondary {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+}
+.card-body h3 {
+  color: white;
+}
+.star .checked {
+  color: yellow;
+}
+.card-body p {
+  color: black;
+  font-weight: 600;
+}
+.card-body h6 {
+  color: black;
+  font-size: 20px;
+}
+.card-body h6 span button {
+  float: right;
+  letter-spacing: 3px;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #573818;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: transparent;
+  transition: 0.5s ease;
+}
+.card-body h6 span button:hover{
+background-color: #2e1700;
+color: white;
+}
+
+/* gallary */
+#gallary h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(161, 109, 14, 1);
+  font-weight: bold;
+  margin-top: 50px;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+#gallary .row {
+  margin-top: 50px;
+
+}
+#gallary .card {
+  box-shadow: 3px 3px 3px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#gallary .overlay{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gallary .card:hover .overlay{
+  opacity: 1;
+  margin-top: 20%;
+  transition: 0.5s ease;
+}
+
+/* About */
+
+#about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(161, 109, 14, 1);
+  font-weight: bold;
+  margin-top: 50px;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+#about .row {
+  margin-top: 50px;
+
+}
+#about .card {
+  box-shadow: 0 0 5px black;
+background-color: rgba(161, 109, 14, 1);
+}
+#about p{
+  font-weight: bold;
+  color: rgba(161, 109, 14, 1);
+text-shadow: 0 0 1px black;
+font-size: 20px;
+}
+#about #btn button{
+ width: 150px;
+ height: 40px;
+ letter-spacing: 3px;
+ background-color: rgba(161, 109, 14, 1);
+ color: white;
+ border: none;
+ border-radius: 5px;
+}
+#about #btn button:hover{
+  background-color: rgba(161, 109, 14, 0.8);
+}
+/* responsive */
+@media screen and (max-width:1000px) {
+  #about p {
+    font-size: 10px;
+  } 
+}
+@media screen and (max-width:760px) {
+  #about p {
+    font-size: 20px;
+  } 
+}
+
+
+/* Contact */
+#Contact{
+  margin-top: 150px;
+}
+#Contact .row {
+  margin-top: 50px;
+}
+#Contact h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(161, 109, 14, 1);
+  font-weight: bold;
+  margin-top: 50px;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+#Contact input{
+  background-color: rgba(161, 109, 14, 1);
+  height: 50px;
+}
+#Contact input::placeholder{
+  color: white;
+}
+#Contact textarea{
+  margin-top: 20px;
+  background-color: rgba(161, 109, 14, 1);
+}
+#Contact textarea::placeholder{
+  color: white;
+}
+#btnmessage{
+  text-align: center;
+}
+#btnmessage button{
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#btnmessage button:hover{
+  background-color: rgba(161, 109, 14, 1);
+}
+
+/* footer */
+#footer {
+  margin-top: 100px;
+  color: white;
+ text-align: center;
+ background-color: #573818;
+}
+#footer h1{
+  color: white;
+  padding-top: 30px;
+}
+#footer p{
+  color: white;
+}
+.icons i{
+  background-color: white;
+  color: #573818;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icons i:hover{
+  background-color: rgba(161,109,14,1);
+  color: white;
+}
+.copyright{
+  color: white;
+  margin-top: 20px;
+}
+.designer a{
+  text-decoration: none;
+  color: #bd6004;
+  font-weight: bold;
+}
+
+.arrow{
+  position: fixed;
+  background-color: rgba(161,109,14,1);
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+}
