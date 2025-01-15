@@ -88,6 +88,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.backTo{
+    text-align: center;
+}
+.backTo a{
+    text-decoration: none;
+    color: #2e1700;
+    font-weight: bold;
+}
+
 .Flogin a{
     text-decoration: none;
     color: #2e1700;
