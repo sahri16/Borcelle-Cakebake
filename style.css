@@ -84,7 +84,7 @@
 /* 
 crat tab */
 .cartTab {
-  background-color: rgba(0, 0, 0, 0.945);
+  background-color: rgba(87, 55, 24, 0.897);
   color: white;
   width: 300px;
   position: fixed;
@@ -151,7 +151,7 @@ cursor: pointer;
   background-color: transparent;
 }
 .listCart .shopItems:nth-child(even){
-  background-color: rgb(63, 62, 62);
+  background-color: rgb(109, 69, 30);
 }
 .listCart{
   overflow: auto;
