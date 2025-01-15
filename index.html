@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body class="">
     <div class="all-content">
         <!-- navbar -->
         <nav class="navbar navbar-expand-sm" id="navbar" data-aos="fade-down" data-aos-duration="1000">
@@ -45,7 +45,8 @@
                         </li>
                         <!-- dropdown -->
                         <li class="nav-item dropdown">
-                            <a href="#product-card" class="nav-link dropdown-toggle" id="navbardrop" data-bs-toggle="dropdown">
+                            <a href="#product-card" class="nav-link dropdown-toggle" id="navbardrop"
+                                data-bs-toggle="dropdown">
                                 category
                             </a>
                             <div class="dropdown-menu">
@@ -66,11 +67,19 @@
                             <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
-                </div>
-                <div class="icons">
-                    <img src="images/user.png" alt="" width="20px">
-                    <img src="images/heart.png" alt="" width="20px">
-                    <img src="images/add.png" alt="" width="20px">
+                    <div class="icons">
+                        <div class="login"><a href="">Log in</a></div>
+                        <div class="signup"><a href="">Sign up</a></div>
+                        <div class="nav-icon">
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -129,16 +138,16 @@
                 <h1>Cakes</h1>
                 <div class="row">
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c1.png" alt="">
+                            <img src="./images/c1.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Cream Cake</h3>
                                 <div class="star">
@@ -149,21 +158,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$50.10 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$50.10 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card  items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c2.png" alt="">
+                            <img src="./images/c2.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Choco Cake</h3>
                                 <div class="star">
@@ -174,21 +183,21 @@
                                     <i class="bx bxs-star checked"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$100.05 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$100.05 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c3.png" alt="">
+                            <img src="./images/c3.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Slice Cake</h3>
                                 <div class="star">
@@ -199,21 +208,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$60.00 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$60.00 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c4.png" alt="">
+                            <img src="./images/c4.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Fruit Cake</h3>
                                 <div class="star">
@@ -224,7 +233,7 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$30.0 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$30.0 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
@@ -233,16 +242,16 @@
 
                 <div class="row" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c5.png" alt="">
+                            <img src="./images/c5.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Brown Cake</h3>
                                 <div class="star">
@@ -253,21 +262,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$10.02 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$10.02 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c6.png" alt="">
+                            <img src="./images/c6.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Slice Cake</h3>
                                 <div class="star">
@@ -278,21 +287,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$15.10 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$15.10 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c7.png" alt="">
+                            <img src="./images/c7.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Fruit Cake</h3>
                                 <div class="star">
@@ -303,21 +312,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$200.30 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$200.30 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c8.png" alt="">
+                            <img src="./images/c8.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Choco Cake</h3>
                                 <div class="star">
@@ -328,7 +337,7 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$30.20 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$30.20 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
@@ -342,16 +351,16 @@
                 <h1>Birthday Cakes</h1>
                 <div class="row">
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c9.png" alt="">
+                            <img src="./images/c9.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Birthdady Cake</h3>
                                 <div class="star">
@@ -362,21 +371,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$30.10 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$30.10 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c10.png" alt="">
+                            <img src="./images/c10.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Bir Cup Cake</h3>
                                 <div class="star">
@@ -387,21 +396,21 @@
                                     <i class="bx bxs-star checked"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$10.10 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$10.10 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c11.png" alt="">
+                            <img src="./images/c11.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Birthday Cake</h3>
                                 <div class="star">
@@ -412,21 +421,21 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$20.10 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$20.10 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3 py-3 py-md-0">
-                        <div class="card">
+                        <div class="card items">
                             <div class="overlay">
                                 <button type="button" class="btn btn-secondary" title="Quick Shop"><i><img
                                             src="./images/views.png" alt="" width="30px"></i></button>
                                 <button type="button" class="btn btn-secondary" title="Add to Wislist"><i><img
                                             src="./images/heart.png" alt="" width="30px"></i></button>
-                                <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img
+                                <button type="button" class="btn btn-secondary addToCart" title="Add to Cart"><i><img
                                             src="./images/add.png" alt="" width="30px"></i></button>
                             </div>
-                            <img src="./images/c12.png" alt="">
+                            <img src="./images/c12.png" alt="" class="product-img">
                             <div class="card-body">
                                 <h3>Cup Cake</h3>
                                 <div class="star">
@@ -437,11 +446,10 @@
                                     <i class="bx bxs-star"></i>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatibus.</p>
-                                <h6>$10.50 <span><button>Add Cart</button></span></h6>
+                                <h6 class="price">$10.50 <span><button class="addToCart">Add Cart</button></span></h6>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -504,6 +512,19 @@
             </div>
         </section>
 
+
+        <!-- Cart tab -->
+        <div class="cartTab">
+            <h3>Shopping Cart</h3>
+            <div class="listCart">
+                <!-- show cart items -->
+            </div>
+            <div class="btn">
+                <button class="close">Close tab</button>
+                <button class="chechOut">Check Out</button>
+            </div>
+        </div>
+
         <!-- About -->
         <section id="about" data-aos="fade-up" data-aos-duration="1500">
             <div class="container">
@@ -529,7 +550,7 @@
         </section>
         <!-- Contact -->
 
-        <form action="https://api.web3forms.com/submit" method="POST" >
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="container" id="Contact" data-aos="fade-up" data-aos-duration="1500">
                 <!-- API Key -->
                 <input type="hidden" name="access_key" value="6d65c03b-eeb4-4340-b616-e2a442c1ba44">
@@ -558,7 +579,7 @@
             </div>
         </form>
 
-        
+
         <!-- footer -->
         <footer id="footer" data-aos="fade-up" data-aos-duration="1000">
             <h1>Borcelle</h1>
@@ -580,6 +601,10 @@
         <!-- <i class='bx bx-up-arrow-alt'></i> -->
     </div>
 </body>
+
+<script src="./Script files/Add-to-cart.js"></script>
+
+
 <!-- for amnimation link -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
